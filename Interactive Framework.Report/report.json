@@ -1,0 +1,71 @@
+{
+  "config": "{\"version\":\"5.60\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "a07fa11a501b428327d6",
+      "ordinal": 1,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 1250.00,
+      "name": "ef68465773cb16a57fff",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0d2d9e12296c26f84763\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":880,\"z\":2000,\"width\":590,\"height\":232.5,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.Provider\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Provider\"},\"Name\":\"Sheet1.Provider\",\"NativeReferenceName\":\"Provider\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}],\"layout\":[{\"properties\":{\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'Cards'\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'top'\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Narrow'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 232.50,
+          "width": 590.00,
+          "x": 10.00,
+          "y": 880.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"2b01edaf38701122e101\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":1270,\"height\":880,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"Analyze\":[{\"queryRef\":\"CountNonNull(Sheet1.Service Pathways)\"}],\"ExplainBy\":[{\"queryRef\":\"Sheet1.Major Funder\",\"active\":true},{\"queryRef\":\"Sheet1.Provider\",\"active\":true},{\"queryRef\":\"Sheet1.Service Type\",\"active\":true},{\"queryRef\":\"Sheet1.Service Sector\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Service Pathways\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Service Pathways)\",\"NativeReferenceName\":\"Count of Service Pathways\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Major Funder\"},\"Name\":\"Sheet1.Major Funder\",\"NativeReferenceName\":\"Major Funder\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Provider\"},\"Name\":\"Sheet1.Provider\",\"NativeReferenceName\":\"Provider\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Service Type\"},\"Name\":\"Sheet1.Service Type\",\"NativeReferenceName\":\"Service Type\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Service Sector\"},\"Name\":\"Sheet1.Service Sector\",\"NativeReferenceName\":\"Service Sector\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Service Pathways\"}},\"Function\":5}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"Sheet1.Major Funder\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Major Funder\"}}],\"isPinned\":true,\"isLocked\":true},{\"queryRefs\":[\"Sheet1.Provider\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Provider\"}}],\"isPinned\":true,\"isLocked\":true},{\"queryRefs\":[\"Sheet1.Service Type\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Service Type\"}}],\"isPinned\":true,\"isLocked\":true},{\"queryRefs\":[\"Sheet1.Service Sector\"],\"isCollapsed\":true,\"isPinned\":true,\"isLocked\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Commonwealth Government'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Primary Health Networks'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Telephone Counselling, Self-help, and Online Based Support Service/Program'\"}}],\"isToggled\":true}]}]}]}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"15L\"}}},\"density\":{\"expr\":{\"Literal\":{\"Value\":\"'dense'\"}}},\"defaultClickAction\":{\"expr\":{\"Literal\":{\"Value\":\"'select'\"}}},\"responsiveLayout\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"connectorType\":{\"expr\":{\"Literal\":{\"Value\":\"'curve'\"}}},\"barsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"30L\"}}}}}],\"dataBars\":[{\"properties\":{\"dataBarWidthPercent\":{\"expr\":{\"Literal\":{\"Value\":\"150L\"}}},\"dataBarScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'levelMaximum'\"}}},\"negativeBarColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}},\"positiveBarColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}},\"dataBarBackgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.2}}}}}}}],\"levelHeader\":[{\"properties\":{\"levelTitleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"showSubtitles\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"levelSubtitleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dataLabels\":[{\"properties\":{\"dataLabelFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"dataLabelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"dataLabelFontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"analysis\":[{\"properties\":{\"aiMode\":{\"expr\":{\"Literal\":{\"Value\":\"'absolute'\"}}}}}]},\"vcObjects\":{\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Australian Veteran Psychosocial Health Service Pathways'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Trebuchet MS'''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"ca70f19435c84b6fd64f\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sheet1\"}},\"Property\":\"Service Pathways\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 880.00,
+          "width": 1270.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7e6035f174c0ebe857b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":600,\"y\":880,\"z\":1000,\"width\":600,\"height\":232.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.Service Type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Service Type\"},\"Name\":\"Sheet1.Service Type\",\"NativeReferenceName\":\"Service Type\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}],\"layout\":[{\"properties\":{\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'Cards'\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'top'\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Narrow'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 232.50,
+          "width": 600.00,
+          "x": 600.00,
+          "y": 880.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1200.00
+    }
+  ]
+}
